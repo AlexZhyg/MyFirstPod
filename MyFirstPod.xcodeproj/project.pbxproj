@@ -16,6 +16,7 @@
 		FAD649AC28F0C9080011AB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD649AA28F0C9080011AB4B /* Main.storyboard */; };
 		FAD649AE28F0C90F0011AB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAD649AD28F0C90F0011AB4B /* Assets.xcassets */; };
 		FAD649B128F0C90F0011AB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD649AF28F0C90F0011AB4B /* LaunchScreen.storyboard */; };
+		FAD649B728F0CD230011AB4B /* MyFirstPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD649B628F0CD230011AB4B /* MyFirstPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		FAD649AD28F0C90F0011AB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAD649B028F0C90F0011AB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAD649B228F0C90F0011AB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD649B628F0CD230011AB4B /* MyFirstPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				FAD6498928F0C7BF0011AB4B /* MyFirstPod.h */,
+				FAD649B628F0CD230011AB4B /* MyFirstPod.swift */,
 			);
 			path = MyFirstPod;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					FAD6498528F0C7BF0011AB4B = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					FAD6498D28F0C7C00011AB4B = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -259,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAD649B728F0CD230011AB4B /* MyFirstPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +438,7 @@
 		FAD6499928F0C7C00011AB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -453,6 +459,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		FAD6499A28F0C7C00011AB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -489,6 +497,7 @@
 		FAD6499C28F0C7C00011AB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T3CAXDX75V;
@@ -505,6 +514,7 @@
 		FAD6499D28F0C7C00011AB4B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T3CAXDX75V;

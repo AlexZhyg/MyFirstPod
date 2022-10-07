@@ -9,7 +9,21 @@ import XCTest
 @testable import MyFirstPod
 
 class MyFirstPodTests: XCTestCase {
+    
+    var myPod: MyFirstPod!
+    
+    override func setUp() {
+        myPod = MyFirstPod()
+    }
 
+    func testAdd() {
+        XCTAssertEqual(myPod.add(a: 1, b: 1), 2)
+    }
+    
+    func testSub() {
+        XCTAssertEqual(myPod.sub(a: 2, b: 1), 1)
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
